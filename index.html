@@ -1,191 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOMAIN SEIZED - Federal Bureau of Investigation</title>
+    <title>:(</title>
+    <link rel="icon" type="image/x-icon" href="dead.png">
+    <meta  property="og:title" content="gone">
+    <meta property="og:description" content=":(">
     <style>
-        :root {
-            --primary-blue: #003087;
-            --secondary-blue: #0a1f3c;
-            --accent-red: #b71c1c;
-            --text-color: #212121;
-            --light-gray: #f8f9fa;
-            --border-gray: #e0e0e0;
-        }
-
         body {
-            background: linear-gradient(135deg, var(--secondary-blue), #000913);
-            color: var(--text-color);
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             margin: 0;
             padding: 0;
-            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
+            height: 100vh;
         }
 
         .container {
-            width: 100%;
-            max-width: 1400px;
-            margin: 20px;
-            background: #fff;
-            padding: 30px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-            max-height: 98vh;
-            overflow-y: auto;
-        }
-
-        .seals {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            justify-items: center;
-            align-items: center;
-            margin: 20px 0;
-            background: var(--light-gray);
-            padding: 20px;
-            border: 1px solid var(--border-gray);
-            border-radius: 8px;
-        }
-
-        .seals img {
-            width: 180px;
-            height: 180px;
-            object-fit: contain;
-            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .seals img:hover {
-            transform: scale(1.05);
-        }
-
-        .notice {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 30px;
-            background: #fff;
-            border-left: 4px solid var(--accent-red);
-            font-size: 15px;
-            line-height: 1.6;
-            border-radius: 8px;
-        }
-
-        h1 {
-            color: var(--accent-red);
-            text-transform: uppercase;
-            font-size: 28px;
-            font-weight: 800;
-            margin: 20px 0;
-            letter-spacing: 2px;
             text-align: center;
-            position: relative;
-            padding-bottom: 15px;
+            max-width: 600px;
         }
 
-        h1::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 3px;
-            background: var(--accent-red);
+        h1, h2, p, h3 {
+            margin: 0 0 20px;
         }
 
-        ul {
-            text-align: left;
-            background: var(--light-gray);
-            padding: 20px 40px;
-            border-left: 4px solid var(--primary-blue);
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            columns: 2;
-            column-gap: 40px;
-        }
-
-        li {
-            margin: 8px 0;
-            font-family: "SF Mono", "Consolas", monospace;
-            line-height: 1.4;
-            break-inside: avoid;
+        h1, h2 {
+            font-size: 24px;
         }
 
         p {
-            margin: 15px 0;
-            text-align: justify;
-            color: var(--text-color);
+            font-size: 18px;
         }
 
-        .legal-notice {
-            font-size: 13px;
-            color: #666;
-            margin-top: 20px;
-            padding-top: 15px;
-            border-top: 1px solid var(--border-gray);
-            font-style: italic;
+        a {
+            font-size: 18px;
         }
 
-        @media (max-width: 1200px) {
-            .seals {
-                grid-template-columns: repeat(2, 1fr);
+        @keyframes flash {
+            0%, 100% {
+                color: white;
             }
-            
-            ul {
-                columns: 1;
+            50% {
+                color: black;
             }
         }
 
-        .center-screen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+        h1, h2, p, h3, a, div {
+            animation: flash 1s infinite;
+        }
+
+        .text {
+    margin-top: 30px;
+	text-decoration: none;
+	color: #dddddd;
+    text-align: center;
+	font-size: 12px;
 }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="seals">
-            <img src="https://www.fbi.gov/++theme++fbigov.theme/images/fbi-seal-logo.png" alt="FBI Seal">
-            <img src="https://www.justice.gov/archive/jmd/irm/lifecycle/images/doj.gif" alt="DOJ Seal">
-            <img src="https://www.dhs.gov/sites/default/files/microsites/24_0215_hsi_logo-and-wordmark.svg" alt="HSI Seal">
-            <img src="https://www.fbi.gov/image-repository/ic3_hd_2.png/@@images/image" alt="IC3 Seal">
-        </div>
-        
-        <div class="notice">
-            <h1>THIS DOMAIN HAS BEEN SEIZED</h1>
-            
-            <p>This domain name has been seized by the Federal Bureau of Investigation, U.S. Department of Justice, U.S. Internet Crime Complaint Center, and Homeland Security Investigations pursuant to a joint law enforcement operation.</p>
-            
-            <p>The domain KITTYHACKERS.LOL has been determined to be involved in violations of the following federal statutes:</p>
-            
-            <ul>
-                <li>18 U.S.C. § 875(c) (Interstate Communications - Threats to Injure)</li>
-                <li>18 U.S.C. § 1030 (Computer Fraud and Abuse Act)</li>
-                <li>18 U.S.C. § 2261A (Cyberstalking)</li>
-                <li>18 U.S.C. § 371 (Conspiracy to Commit Computer Fraud)</li>
-                <li>18 U.S.C. § 1028 (Identity Theft and Fraud)</li>
-                <li>18 U.S.C. § 1343 (Wire Fraud)</li>
-                <li>18 U.S.C. § 2512 (Manufacture/Distribution of Intercepting Devices)</li>
-                <li>18 U.S.C. § 3559(g)(1) (Swatting)</li>
-                <li>47 U.S.C. § 223(a)(1)(C) (Harassing Communications in Interstate Commerce)</li>
-            </ul>
-            
-            <p>This seizure is part of a coordinated law enforcement action targeting criminal enterprises engaged in the distribution of Remote Access Trojans (RATs), swatting services, cyberstalking operations, and related cybercrime activities that pose a significant threat to public safety and national security.</p>
-            
-            <p class="legal-notice">Pursuant to a seizure warrant issued by the United States District Court for the (Electronic evidence related to the illegal activities described above, including communications, records, and data stored on the seized domain KITTYHACKERS.LOL and associated electronic devices. Evidence linking the domain and the devices to criminal enterprises involved in cybercrime activities such as remote access trojans (RATs), swatting services, cyberstalking, identity theft, and wire fraud. Logs, emails, chat records, or other digital evidence that could lead to identification of other participants in the criminal activities. Financial records related to wire fraud, identity theft, or any illicit transactions involving the domain and owner) In the Eastern District of New York under 18 U.S.C. §§ 981, 982, and 21 U.S.C. § 853.</p>
-        <center>
-            <p class="legal-notice" >This is a joke btw</p>
-        </center>
-        </div>
+        <h1>Kittyhackers.lol</h1>
+        <h2>KITTYHACKERS.LOL_NOT_FOUND_404</h2>
+        <p>Hello people, it seem's you have came across the kittyhackers website aka kittyhackers.lol. this friend group is no more, well not really no more, we will probably be back in the future under a new name. so yea, kittyhackers are no more, all member pages are still accessible, you will just need to type the url. goodbye.</p>
+        <p>Enact & Gonnaslit</p>
+        <h3>Kittyhackers;</h3>
+        <p><strong>*** STOP: 0x000000ED (0x80F128D0, exc000009c, exe0000000, 0x00000000)</strong></p>
+        <p>Members below.</p>
+        <a href="https://kittyhackers.lol/enact" target="_blank">Enact</a><br>
+        <a href="https://kittyhackers.lol/gonnaslit" target="_blank">Gonnaslit</a><br>
+        <a href="https://kittyhackers.lol/toenail" target="_blank">Toenail</a><br>
+        <a href="https://kittyhackers.lol/kl" target="_blank">KL</a><br>
+        <a href="https://kittyhackers.lol/gatomany" target="_blank">Gatomany</a><br>
+        <a href="https://kittyhackers.lol/szd" target="_blank">SZD</a><br>
+        <a href="https://kittyhackers.lol/gaturu" target="_blank">Katuru</a><br>
+        <a href="https://kittyhackers.lol/alex" target="_blank">Alex</a><br>
+        <a href="https://kittyhackers.lol/fedview" target="_blank">Fedview</a>
+        <br>
+        <br>
+        <p>Surviving Members:</p>
+        <P>Enact, Gonnaslit, Toenail, KL, Gatomany, Katuru, Alex</P><br>
+        <div class="text">
+Other Website's : cruel.ink, meowb.in | meowbin.net | meowbin.lol | meowbin.info
+        <script></script>
     </div>
-</body>
-</html>
+    <audio autoplay loop>
+        <source src="japan.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </body>
+    </html>
+    
